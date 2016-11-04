@@ -1,0 +1,29 @@
+<view class="container">
+    <view class="page-head">
+        <text>购物车</text>
+    </view>
+
+    <view id="action">
+        <button bindtap="edit" type="primary">{{inEditMode ? '完成' : '编辑'}}</button>
+        <button class="{{inEditMode ? '' : 'hide'}}" type="warn" bindtap="deleteItems">删除</button>
+    </view>
+    
+    <view id="carts">
+        <checkbox-group bindchange="selectItems">
+            <view wx:for="{{items}}" class="item {{index == 0 ? 'item-first' : ''}}" wx:key="pid">
+                <checkbox style="width: 10%" value="{{item.pid}}"></checkbox>
+                <navigator url="../item/item?index={{index}}" style="width: 25%">
+                    <image src="/image/{{item.image}}.jpg"></image>
+                </navigator>
+                <text style="width: 40%">{{item.name}}</text>
+                <text style="width: 25%">{{item.price}}</text>
+                <input value="{{item.inCartQuantity}}" disabled="{{inEditMode ? false : true}}"
+                    type="number" class="{{inEditMode ? '' : 'input-disabled'}}" id="qty{{index}}"
+                    bindinput="editQty"></input>
+            </view>
+        </checkbox-group>
+        <view id="pay">
+            <button type="primary" bindtap="pay">去支付</button>
+        </view>
+    </view>
+</view>
