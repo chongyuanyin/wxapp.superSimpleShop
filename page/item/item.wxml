@@ -5,7 +5,7 @@
     <view class="item-display">
         <image src="/image/{{item.image}}.jpg"></image>
         <text>{{item.name}}</text>
-        <text>{{item.price}}</text>
+        <text>￥{{item.price}}</text>
         <text>“{{item.description}}”</text>
         <view class="status">
             <label id="label-in-favorite">

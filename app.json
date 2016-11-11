@@ -5,6 +5,7 @@
     "page/favorite/favorite",
     "page/item/item",
     "page/buy/buy",
+    "page/payment/payment",
     "page/service/service"
   ],
   "window": {

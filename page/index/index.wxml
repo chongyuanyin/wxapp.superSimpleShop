@@ -19,14 +19,14 @@
                 <image src="/image/{{deals[index].image}}.jpg"></image>
             </navigator>
             <text>{{deals[index].name}}</text>
-            <text>{{deals[index].price}}</text>
+            <text>￥{{deals[index].price}}</text>
         </view>
         <view class="sale-item" wx:if="{{index+1 < deals.length}}">
             <navigator url="../item/item?index={{index+1}}">
                 <image src="/image/{{deals[index+1].image}}.jpg"></image>
             </navigator>
             <text>{{deals[index+1].name}}</text>
-            <text>{{deals[index+1].price}}</text>
+            <text>￥{{deals[index+1].price}}</text>
         </view>
     </view>
 

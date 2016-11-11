@@ -56,9 +56,36 @@
     margin: auto 0 auto 10rpx;
 }
 
+#total-price {
+    margin: 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 #pay button {
     margin: 20rpx;
     font-size: 30rpx;
+}
+
+.amountButtonLeft, .amountButtonRight {
+    width: 60rpx; 
+    height: 60rpx;
+    margin: 0;
+    padding: 0;
+    font-size: 30rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+.amountButtonLeft {
+    margin-right: 10rpx;
+}
+
+.amountButtonRight {
+    margin-left: 10rpx;
 }
 
 /*image.down-arrow {

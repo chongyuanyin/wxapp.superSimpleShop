@@ -3,7 +3,7 @@ App({
   "default": [{
       "pid": 1,
       "name": "Apple",
-      "price": "￥10",
+      "price": "10",
       "image": "apple",
       "description": "大红苹果，好吃哟！",
       "inCartQuantity": 0,
@@ -12,7 +12,7 @@ App({
     }, {
       "pid": 2,
       "name": "Orange",
-      "price": "￥5",
+      "price": "5",
       "image": "orange",
       "description": "大橙子，好吃哟！",
       "inCartQuantity": 0,
@@ -21,7 +21,7 @@ App({
     }, {
       "pid": 3,
       "name": "Strawberry",
-      "price": "￥15",
+      "price": "15",
       "image": "strawberry",
       "description": "新鲜草莓，好吃哟！",
       "inCartQuantity": 0,
@@ -30,7 +30,7 @@ App({
     }, {
       "pid": 4,
       "name": "Watermelon",
-      "price": "￥20",
+      "price": "20",
       "image": "watermelon",
       "description": "薄皮红瓤西瓜，好吃哟！",
       "inCartQuantity": 0,
